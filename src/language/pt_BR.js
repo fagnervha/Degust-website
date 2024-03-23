@@ -981,6 +981,10 @@ export const portuguese = {
     "Successfully updated": "Atualizado com Sucesso",
     "New delivery address selected.": "Novo endereço selecionado.",
     "Label Name(Optional)": "Nome do Campo (Opcional)",
+    "Interest updated successfully": "Interesse atualizado com sucesso",
+    "Not Now": "Agora Não",
+    "The guest id field is required.": "O campo de ID do visitante é obrigatório.",
+    "Type here": "Digite aqui",
     "cuisines": "Culinárias",
     "copy": "Copiar",
 }

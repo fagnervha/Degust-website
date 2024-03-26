@@ -88,7 +88,7 @@ const RestaurantBoxCard = (props) => {
     }
     const logo = `${restaurantImageUrl}/${image}`
     const theme = useTheme()
-
+    const open_at=t("Open at")
     const settings = {
         dots: false,
         infinite: true,
@@ -196,7 +196,7 @@ const RestaurantBoxCard = (props) => {
                                 zIndex: 1,
                             }}
                         >
-                            {opening_time === "closed" ? t('Closed Now') : ` Open at ${moment(opening_time, "HH:mm:ss").format("hh:mm A")}`}
+                            {opening_time === "closed" ? t('Closed Now') : ` ${open_at} ${moment(opening_time, "HH:mm:ss").format("hh:mm A")}`}
                         </Typography>
                     </Stack>
                 )

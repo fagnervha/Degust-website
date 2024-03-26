@@ -237,7 +237,7 @@ const ReferralShare = ({ referralCode, configData, horizontal, size }) => {
                                             variant="contained"
                                             onClick={() => handleTooltipOpen(referralCode)}
                                         >
-                                            Copy
+                                            {t("Copy")}
                                         </Button>
                                     </Tooltip>
                                 </ClickAwayListener>

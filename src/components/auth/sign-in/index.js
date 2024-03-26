@@ -102,7 +102,7 @@ const SignInPage = ({
         validationSchema: Yup.object({
             phone: Yup.string()
                 .required(t('Please give a phone number'))
-                .min(10, 'number must be 10 digits'),
+                .min(10, t('number must be 10 digits')),
             password: Yup.string()
                 .min(6, t('Password is too short - should be 6 chars minimum.'))
                 .required(t('Password is required')),

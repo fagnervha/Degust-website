@@ -11,11 +11,13 @@ export const english = {
     "Please add manually or collect promo from": "Please add manually or collect promo from",
     "Payment Verification Failed !": "Payment Verification Failed !",
     "Chef has started cooking": "Chef has started cooking ",
+    "Open at":"Open at",
     "Tell us what’s wrong with the order ?": "Tell us what’s wrong with the order ?",
     "You payment is declined by admin. Please contact with admin for further query": "You payment is declined by admin. Please contact with admin for further query",
     "Type your address here or pick from map": "Type your address here or pick from map",
     "Select from saved addresses or pick from map": "Select from saved addresses or pick from map",
     "Sign up with": "Sign up with",
+    "Save": "Save",
     "Share your valuable feedback": "Share your valuable feedback",
     "Today Available Till": "Today Available Till",
     "*min purchase": "*min purchase",
@@ -250,14 +252,14 @@ export const english = {
     'Last name is required': 'Last name is required',
     'Address Form': 'Address Form',
     'items selected': 'items selected',
-
+"number must be 10 digits":"number must be 10 digits",
     'Image Format - JPG, Pong, ZPEG, GIF Image Size - Maximum Size 2Mb Image Ratio - 1: 1':
         'Image Format - JPG, Pong, ZPEG, GIF Image Size - Maximum Size 2Mb Image Ratio - 1: 1',
 
     'Order Id': 'Order Id',
     'Order Amount': 'Order Amount',
     'Track Order': 'Track Order',
-    Pending: 'Pending',
+    // Pending: 'Pending',
 
     Home: 'Home',
     'Features Catagories': 'Features Catagories',
@@ -1040,7 +1042,7 @@ export const english = {
     "If you log in, your order history will be saved. However, if you continue as a guest, you won't be able to see your order history after completing your order.": "If you log in, your order history will be saved. However, if you continue as a guest, you won't be able to see your order history after completing your order.",
     "Open Restaurant": "Open Restaurant",
     "(Faster & secure way to pay bill)": "Rapido e seguro",
-    "Successfully  updated": "Atualizado com Sucesso",
+    "Successfully updated": "Atualizado com Sucesso",
     " Open at ": "Aberto às.",
-    "Copy": "Copiar",
+    "Copy": "Copy",
 }

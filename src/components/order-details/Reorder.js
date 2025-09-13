@@ -199,6 +199,7 @@ const Reorder = ({ orderData, orderZoneId }) => {
         const isZoneExist = orderAbleZoneIds?.length > 0 && orderAbleZoneIds.find(item => item === orderZoneId)
         if (isZoneExist) {
             const reorderAbleItem = getReorderAbleItems(data?.data, orderData)
+            console.log({orderData});
             if (reorderAbleItem?.length > 0) {
                 const item_list = reorderAbleItem.map(rItem => {
                     let similar = []
@@ -213,6 +214,7 @@ const Reorder = ({ orderData, orderZoneId }) => {
                             similar.push(item)
                         }
                     })
+                    console.log({similar});
                     if (similar?.length > 0) {
                         let selectedOptions = []
                         const similarVariations = getSimilarVariations(rItem.variations, similar?.[0]?.variation)
@@ -241,6 +243,8 @@ const Reorder = ({ orderData, orderZoneId }) => {
                         )
                         let totalPrice = (itemsBasePrice * similar?.[0]?.quantity)
                         let totalQty = 0;
+                        console.log("vvvv",getSimilarVariations(rItem.variations, similar?.[0]?.variation));
+
                         return {
                             model: rItem.available_date_starts ? "ItemCampaign" : "Food",
                             add_on_ids: rItem?.add_on?.length > 0 ? rItem?.add_on?.map((add) => {
@@ -256,6 +260,12 @@ const Reorder = ({ orderData, orderZoneId }) => {
                             item_id: rItem?.id,
                             price: itemsBasePrice,
                             quantity: similar?.[0]?.quantity,
+                            variation_options:[]?.concat(...getSimilarVariations(rItem.variations, similar?.[0]?.variation)?.map((variation) => {
+                                return  variation.values
+                                    ?.filter(item => item.isSelected)
+                                    ?.map(item => item.option_id);
+
+                            })),
                             variations: getSimilarVariations(rItem.variations, similar?.[0]?.variation)?.map((variation) => {
                                 return {
                                     name: variation.name,
@@ -277,7 +287,7 @@ const Reorder = ({ orderData, orderZoneId }) => {
                     if (item_list?.every(item => item !== undefined)) {
                         reorderAddToCartMutate(item_list, {
                             onSuccess: handleSuccess,
-                            onErrorResponse: onErrorResponse
+                            onError: onErrorResponse
                         })
                         // toast.success(t('Reorder-able items added to the cart successfully.'))
                         // dispatch(setClearCart())

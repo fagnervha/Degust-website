@@ -18,7 +18,6 @@ const neutral = {
     1600: '#FFEBDD',
     1700: '#fff5cf',
     1800: '#FCFCFC',
-
 }
 
 const table = {
@@ -48,7 +47,7 @@ const background = {
     paper: '#FFFFFF',
     buttonBackground: 'rgba(82, 102, 208, 0.05)',
     profileBackground: '#FBFBFB',
-    toaster: '#FFFFFF'
+    toaster: '#FFFFFF',
 }
 const newsletterBG = '#2287FD'
 
@@ -124,9 +123,9 @@ const customColor = {
     ten: '#FFFFFF',
     eleven: '#039D55',
     twelve: '#334257',
-    thirteen: "#FFE5CD",
-    fourteen: "#FCEA10",
-    fifteen: "#3E594D",
+    thirteen: '#FFE5CD',
+    fourteen: '#FCEA10',
+    fifteen: '#3E594D',
 }
 
 const text = {
@@ -135,7 +134,7 @@ const text = {
     custom: '#242424',
     disabled: 'rgba(55, 65, 81, 0.48)',
     footerText: '#F5F6F8',
-    formHeader: customColor.twelve
+    formHeader: customColor.twelve,
 }
 
 export const lightThemeOptions = {
@@ -282,7 +281,6 @@ export const lightThemeOptions = {
     },
 
     palette: {
-
         action: {
             active: neutral[500],
             focus: 'rgba(55, 65, 81, 0.12)',
@@ -353,7 +351,9 @@ export const lightThemeOptions = {
         '0px 25px 50px rgba(100, 116, 139, 0.25)',
         '0px 10px 20px -5px rgba(51, 66, 87, 0.05)',
         '0px 0px 2px 0px rgba(51, 66, 87, 0.20)',
-        "0px 0px 2px 0px rgba(51, 66, 87, 0.40)",
-
+        '0px 0px 2px 0px rgba(51, 66, 87, 0.40)',
+    ],
+    shadows2: [
+        '0px -1px 2px rgba(42, 42, 42, 0.05), 0px 2px 2px rgba(42, 42, 42, 0.1)',
     ],
 }
